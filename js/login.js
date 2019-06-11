@@ -1,0 +1,10 @@
+$(function(){
+   $(".emaillg").click(function(){
+        $(".ph_login").css("display","none");
+        $(".email_login").css("display","block");
+    })
+    $(".phonelg").click(function(){
+        $(".ph_login").css("display","block");
+        $(".email_login").css("display","none");
+    })
+})

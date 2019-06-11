@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>文件上传</title>
+</head>
+<script type="text/javascript" src="js/public/jquery-1.8.3.min.js"></script>
+<body>
+<form enctype="multipart/form-data">
+    <input type="file" name="file" id="file">
+    <input name="query" type="button" value="导入excel">
+ </form>
+
+</body>
+<script type="text/javascript">
+    $('input[name="query"]').click(function(){
+        var fd = new FormData();
+         var name = $("#file").val();
+        if(checkData(name)){
+        
+         fd.append("name", name); //上传的参数名 参数值 k-v键值对  其实就是文件名
+         fd.append("file", $("#file").get(0).files[0]);//上传的文件file   这个是文件
+         $.ajax({  
+              url:"/jiexi",  
+              type:"post",  
+              data:fd,  
+              cache: false,  
+              processData: false,  
+              contentType: false,  
+              success:function(data){ 
+                  console.log(data);
+                    alert("操作成功！");  
+              },  
+              error:function(e){  
+                  alert("网络错误，请重试！！");  
+               }  
+              });  
+             }
+    })
+     function checkData(fileDir){    
+       var suffix = fileDir.substr(fileDir.lastIndexOf("."));    
+       if("" == fileDir){    
+          alert("选择需要导入的Excel文件！");
+           return false;    
+       }    
+       if(".xls" != suffix && ".xlsx" != suffix ){    
+           alert("选择Excel格式的文件导入！");
+           $('#file').val("");
+           return false;    
+       }    
+       return true;    
+    }
+</script>
+</html>

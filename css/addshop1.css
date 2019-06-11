@@ -1,0 +1,447 @@
+body{
+    margin: 0;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+/*头部*/
+.header{
+    height: 58px;
+    background-color: #1c2327;
+    display:-webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.head_logo{
+    width:262px;
+    height:100%;
+}
+.header_top{
+    flex:1;
+    float:right;
+    display:-webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: flex-end;
+    margin-right:4%;
+}
+.header_top_c{
+    width:88.36%;
+    height:100%;
+}
+.header .pagebg{
+    width:70px;
+    height:58px;
+    float:left;
+}
+.header .logobg{
+    width:128px;
+    height:23px;
+    margin-top:17px;
+    float:left;
+    margin-left:14px;
+}
+.header_cenbox{
+    width:1228px;
+    height:100%;
+    float:left;
+}
+
+.head_role{
+    width:179px;
+    height:58px;
+    float: left;
+}
+.head_role img{
+    float:left;
+    padding-top:20px;
+}
+
+.head_role span{
+    float:left;
+    line-height: 58px;
+    font-family: "黑体";
+    color:#fff;
+    font-size: 16px;
+    padding-left:10px;
+}
+.head_role .roleicon{
+    width:16px;
+    height:16px;
+}
+.head_role .yonghu_hover{
+    width:16px;
+    height:16px;
+}
+.head_role .rizhi{
+    width:16px;
+    height:16px;
+}
+.header_right{
+    height:58px;
+    float:right;
+    display: flex;
+    align-items: center;
+}
+.header_right p{
+    display: flex;
+    color:#fff;
+    font-size: 18px;
+    font-family: "黑体", sans-serif;
+    line-height: 58px;
+    justify-content: flex-end;
+}
+.header_right p:nth-child(1){
+     width:118px;
+ }
+.header_right p:nth-child(1) i:nth-child(1){
+    color:#1bee28;
+    padding-right:8px;
+}
+.header_right p:nth-child(2){
+    width:140px;
+}
+.header_right p:nth-child(2) i:nth-child(1){
+    color:#10def1;
+    padding-right:8px;
+}
+.header_right p:nth-child(2) span,.header_right p:nth-child(3) span{
+    padding-right:6px;
+}
+.header_right p:nth-child(3){
+    width:108px;
+    display: flex;
+}
+.header_right p:nth-child(3) i:nth-child(1){
+    color:#04a1cd;
+    padding-right:8px;
+}
+.header_right p i:nth-child(1){
+    font-size: 16px;
+}
+.header_right p .icon-jiantou9{
+    font-size: 12px;
+}
+
+/*内容*/
+/*左菜单*/
+.pg-content .left_menu{
+    position: absolute;
+    top:58px;
+    left: 0;
+    bottom: 0;
+    width: 262px;
+    background-color: #272b2e;
+}
+.addshop_manege{
+    width:100%;
+    height:45px;
+    border-bottom:1px solid #bfbfbf;
+    position:relative;
+    top:0;
+    left:0;
+}
+.addshop_manege span{
+    line-height: 45px;
+    font-family: "黑体";
+    font-size: 18px;
+    color:#fff;
+    padding-right:68px;
+}
+.addshop_manege .add_shop_menuone  .icon-zhuye{
+    font-size: 18px;
+    color:#fff;
+    padding:0 20px;
+}
+.addshop_manege .add_shop_menuone  .icon-jiantou9{
+    font-size: 12px;
+    color:#fff;
+}
+.add_shop_menutwo{
+    width:100%;
+    position:absolute;
+    top:46px;
+    left:0;
+
+}
+
+.nowpages i,.nowpages span{
+    color:#4d6bed;
+}
+.add_shop_menutwo li{
+    width:100%;
+    height:38px;
+    display: flex;
+    align-items: center;
+}
+.add_shop_menutwo li:nth-child(1){
+    padding-top: 3px;
+}
+.add_shop_menutwo a{
+    font-family: "黑体";
+    font-size: 18px;
+    color:#fff;
+    text-decoration: none;
+}
+.add_shop_menutwo .nowpages a{
+    color:#4d6bed;
+}
+.addshop_manege .add_shop_menutwo a i:nth-child(1){
+    padding-left:56px;
+    padding-right:20px;
+    font-size: 14px;
+}
+.addshop_manege .add_shop_menutwo a i:nth-child(2){
+    padding-left:35px;
+}
+/*右内容*/
+
+.pg-content .content{
+    position: absolute;
+    top: 58px;
+    right: 0;
+    bottom: 0;
+    left: 262px;
+    overflow: auto;   /*注释不注释，两种布局效果*/
+    background: #f2f2f2;
+}
+.right_con{
+    background: #f2f2f2;
+    min-width: 762px;
+}
+.add_shop_title{
+    width:100%;
+    height:43px;
+    background: #fff;
+    border-bottom:3px solid #bfbfbf;
+    font-size: 18px;
+    color:#333;
+    text-align: center;
+    line-height: 46px;
+    font-family: "黑体";
+}
+.add_shop_con{
+    width:95.18%;
+    margin-left:34px;
+    background: #f2f2f2;
+}
+.add_shop_infor{
+    width:100%;
+    height:40px;
+    font-family: "黑体", sans-serif;
+    font-size: 18px;
+    color:#333;
+    line-height: 40px;
+}
+.add_shop_infor a{
+    float:right;
+    font-family: "黑体", sans-serif;
+    font-size: 16px;
+    color:#333;
+    padding-right: 20px;
+}
+.add_shop_infor a span{
+    color:#fe0101;
+}
+/*录入*/
+.add_shop_oddEnter{
+    width:100%;
+    /*height:505px;*/
+    background: #fff;
+    border-bottom: 3px solid #e0e0e0;
+    margin-bottom:24px;
+}
+.add_shop_oddEnter_c{
+    width:97.28%;
+    margin:0 auto;
+}
+.add_shop_formbox{
+    width:97.46%;
+    display:-webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: space-between;*/
+    align-items: center;
+    padding-top:20px;
+}
+.add_shop_formbox a{
+    width:397px;
+    height:43px;
+    display:-webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: center;
+}
+.add_shop_formbox a span:nth-child(1){
+    display: block;
+    width:73px;
+    font-family: "黑体", sans-serif;
+    font-size: 16px;
+    color:#333;
+    line-height: 43px;
+    text-align: justify;
+    text-align-last: justify;
+    padding:0 24px 0 0;
+}
+.add_shop_formbox a input{
+    height:33px;
+    border:none;
+    outline: none;
+    border:1px solid #b5b5b5;
+    width:254px;
+    margin-right:12px;
+    background: #f8f8f8;
+    font-size: 16px;
+    color:#333;
+    font-family: "黑体", sans-serif;
+    text-align: center;
+}
+.add_shop_formbox a input::-webkit-input-placeholder{
+    font-family: "黑体", sans-serif;
+    color:#666;
+    font-size: 14px;
+}
+.add_shop_formbox a .mustadd{
+    color:#fe0101;
+    display: block;
+    width:12px;
+}
+/*文本域*/
+.add_shop_oddEnterarea{
+    width:100%;
+    height:170px;
+    display: flex;
+    padding-top:8px;
+}
+.add_shop_oddEnterarea span:nth-child(1){
+    display: block;
+    width:73px;
+    font-size: 16px;
+    color:#333;
+    font-family: "黑体", sans-serif;
+    padding-right:24px;
+}
+.add_shop_oddEnterarea .mustadd{
+    color:#fe0101;
+    display: block;
+    width:12px;
+    margin-left:12px;
+}
+.comments {
+    width:99.5%;/*自动适应父布局宽度*/
+    height:100%;
+    overflow:auto;
+    word-break:break-all;
+    border:none;
+    outline: none;
+    /*border:1px solid #b5b5b5;*/
+    background: transparent;
+    resize:none
+}
+.add_shop_oddEnterarea a{
+    width:65%;
+    height:170px;
+    background: #f8f8f8;
+    border:1px solid #b5b5b5;
+}
+/*保存取消*/
+.add_shop_save{
+    height: 40px;
+    padding:26px 0 34px 117px;
+}
+.add_shop_save span:nth-child(1){
+    float:left;
+    width:150px;
+    height:40px;
+    background: #04a7f2;
+    text-align: center;
+    line-height: 40px;
+    font-family: "黑体", sans-serif;
+    font-size: 18px;
+    color:#fff;
+    margin-right:28px;
+}
+.add_shop_save span:nth-child(2){
+    float:left;
+    width:148px;
+    height:38px;
+    border:1px solid #b5b5b5;
+    background: #fff;
+    text-align: center;
+    line-height: 38px;
+    font-family: "黑体", sans-serif;
+    font-size: 18px;
+    color:#333;
+}
+/*列表*/
+.add_shop_lists_til{
+    width:100%;
+}
+.add_shop_lists_til{
+    height:80px;
+    font-family: "黑体", sans-serif;
+    color:#fe0101;
+    font-size: 16px;
+    line-height: 80px;
+}
+.tablelists{
+    /*width:1320px;*/
+    min-height:130px;
+    width:100%;
+    margin-bottom: 22px;
+    overflow-y: auto;
+}
+.tablelists table{
+    width:100%;
+    border-collapse:collapse;
+    border:1px solid #b5b5b5;
+}
+
+/*.tablelists table tr td:nth-child(1){*/
+/*    width:92px;*/
+/*}*/
+/*.tablelists table tr td:nth-child(2){*/
+/*    width:316px;*/
+/*}*/
+/*.tablelists table tr td:nth-child(3){*/
+/*    width:317px;*/
+/*}*/
+/*.tablelists table tr td:nth-child(4){*/
+/*     width:314px;*/
+/* }*/
+/*.tablelists table tr td:nth-child(5){*/
+/*    width:276px;*/
+/*}*/
+.tablelists table tr{
+    background: #fff;
+    font-size: 16px;
+    font-family: "黑体", sans-serif;
+    color:#333;
+    height:44px;
+}
+.tablelists table tr:hover{
+    background: #f8f8f8;
+}
+.tablelists table tr:nth-child(1){
+    height:40px;
+    font-size: 20px;
+    font-family: "黑体", sans-serif;
+    color:#333;
+    background: #dae4f8;
+}
+.tablelists table td{
+    text-align: center;
+}

@@ -1,0 +1,56 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700");
+html, body, div, p, ul, li, ol, dl, dt, dd, table, tr, td, th, form, fieldset, legend, h1, h2, h3, h4, h5, h6, hr, input, img {
+    margin: 0;
+    padding: 0; }
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    font-size: 12px;
+    font-family: "黑体", sans-serif;
+}
+
+li {
+    list-style: none; }
+
+a {
+    text-decoration: none;
+    color: #555; }
+
+img {
+    border: 0;
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #455a64;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400; }
+a:link,a:visited{
+    text-decoration:none;  /*超链接无下划线*/
+}
+input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+input:focus::-moz-placeholder {
+    color: transparent;
+}
+input:focus:-moz-placeholder {
+    color: transparent;
+}
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+/*清除浮动*/
+.clear_float:after {
+    display: block;
+    height: 0;
+    content: ".";
+    visibility: hidden;
+    overflow: hidden;
+    clear: both; }
